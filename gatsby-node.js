@@ -22,7 +22,11 @@ exports.onCreateWebpackConfig = ({ actions, stage, loaders }) => {
         {
           test: /mapbox-gl/,
           use: loaders.null(),
-        },
+	},
+	{
+	test: /@mapbox/,
+	use: loaders.null(),
+        }
       ],
     }
   }

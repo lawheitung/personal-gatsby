@@ -3,7 +3,6 @@ import React, { Component,useRef, useEffect, useState } from 'react'
 import MapGL, { Marker,NavigationControl, Popup, FullscreenControl,ScaleControl, GeolocateControl} from 'react-map-gl';
 import img from './pin.svg';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 import IntroLine from "../../intro"
 import './travel.scss'
 
