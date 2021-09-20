@@ -1,6 +1,4 @@
 import * as React from "react"
-
-import {TiFeather} from 'react-icons/ti'
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import '../style/global.scss'
@@ -15,33 +13,29 @@ import Hero from "../components/hero"
 import Contact from "../components/contact"
 import Navbar from "../components/Navbar"
 
-
-
-const IndexPage = () => (
+const About = () => (
   <>
-  <div className="scroll-container-main">
-  <Layout>
-    <Navbar/>
-    <Seo title="Home" />
-    <div>
-    <Hero max="true"/>
+    <div className="scroll-container-main">
+    <Layout>
+      <Navbar/>
+      <Seo title="About" />
+      <div>
+      <Journey />
+      </div>
+      <div>
+      <Fencing />
+      </div>
+      <div>
+      <Travel />
+      </div>
+      <div>
+      <Gameplan/>
+      </div>
+      </Layout>
     </div>
-    <div>
-    <Journey />
-    </div>
-    <div>
-    <Fencing />
-    </div>
-    <div>
-    <Travel />
-    </div>
-    <div>
-    <Gameplan/>
-    </div>
-    </Layout>
-  </div>
 
-</>
+  </>
 )
 
-export default IndexPage
+
+export default About
