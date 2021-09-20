@@ -26,7 +26,7 @@ const About = () => (
       <Fencing />
       </div>
       <div>
-      <Travel />
+      {/* <Travel /> */}
       </div>
       <div>
       <Gameplan/>

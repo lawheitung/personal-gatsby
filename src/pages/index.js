@@ -33,7 +33,7 @@ const IndexPage = () => (
     <Fencing />
     </div>
     <div>
-    <Travel />
+    {/* <Travel /> */}
     </div>
     <div>
     <Gameplan/>
