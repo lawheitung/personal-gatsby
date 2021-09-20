@@ -16,7 +16,7 @@ exports.onCreateWebpackConfig = ({ actions, stage, loaders }) => {
   }
 
   // when building HTML, window is not defined, so Leaflet causes the build to blow up
-  if (stage === "build-html" || stage === "develop-html") {
+  if (stage === "build-html") {
     config.module = {
       rules: [
         {
@@ -31,5 +31,9 @@ exports.onCreateWebpackConfig = ({ actions, stage, loaders }) => {
     }
   }
 
-  actions.setWebpackConfig(config)
+  actions.setWebpackConfig({
+    node:{
+      fs: 'empty'
+    }
+  })
 }
